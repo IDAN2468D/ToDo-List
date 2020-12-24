@@ -15,7 +15,7 @@ const H1 = styled.h1`
 export default function Header() {
     return (
         <div className="Header">
-            <H1>To Do kazam</H1>
+            <H1>To Do List</H1>
         </div>
     )
 }
