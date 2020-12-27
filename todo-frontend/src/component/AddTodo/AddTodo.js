@@ -37,7 +37,13 @@ export default function Forminput() {
         const newTodo = { name: todoName, complete: false };
         setTodos([...todos, newTodo])
         setTodoName("");
-        fetch("http://localhost:3001/todos", { method: "POST", body: JSON.stringify(newTodo) });
+        fetch("http://localhost:3001/todos", {
+            method: "POST",
+            body: JSON.stringify(newTodo),
+            headers: {
+                "Content-Type": "application/json; charset=UTF-8"
+            },
+        });
     }, [todoName, setTodos, todos])
 
     return (
