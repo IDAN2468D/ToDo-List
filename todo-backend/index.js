@@ -7,6 +7,8 @@ app.use(express.urlencoded())
 app.use(express.json())
 
 app.use(cors())
+
+app.use(bodyParser.urlencoded({ extended: true }))
 const db = require("./db")
 
 

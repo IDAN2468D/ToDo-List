@@ -6,8 +6,8 @@ const todoSchema = new mongoose.Schema({
 
     _id: {
         type: String,
-        auto: true,
         required: true,
+        unique: true,
     },
     name: {
         type: String,
