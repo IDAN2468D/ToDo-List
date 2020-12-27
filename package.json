@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "concurrently \"cd todo-backend && nodemon index.js\" \"cd todo-frontend && npm start\"",
-    "build": "cd todo-frontend && npm run build && mv build ../server/build"
+    "build": "cd todo-frontend && npm run build && build ../server/build"
   },
   "repository": {
     "type": "git",
