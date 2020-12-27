@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from "styled-components";
 
 
@@ -27,7 +27,6 @@ export default function ListItem({ todo, id, checkComplete, handleEditTodos }) {
             setEditValue(todo.name)
         }
     }
-
 
     if (onEdit) {
         return (
